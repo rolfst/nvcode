@@ -95,11 +95,11 @@ local markdownPandocFormat = {formatCommand = 'pandoc -f markdown -t gfm -sp --t
 
 require"lspconfig".efm.setup {
     -- init_options = {initializationOptions},
-    cmd = {DATA_PATH .. "/lspinstall/efm/efm-langserver"},
+    cmd = {DATA_PATH .. '/lspinstall/efm/efm-langserver'},
     init_options = {documentFormatting = true, codeAction = false},
-    filetypes = {"lua", "python", "javascriptreact", "javascript", "sh", "html", "css", "json", "yaml", "markdown"},
+    filetypes = {"lua", "python", "typescriptreact", "typescript", "javascriptreact", "javascript", "sh", "html", "css", "json", "yaml", "markdown"},
     settings = {
-        rootMarkers = {".git/"},
+        rootMarkers = {".git/", "package.json"},
         languages = {
             python = python_arguments,
             lua = lua_arguments,
@@ -113,6 +113,14 @@ require"lspconfig".efm.setup {
             markdown = {markdownPandocFormat}
             -- javascriptreact = {prettier, eslint},
             -- javascript = {prettier, eslint},
+            typescriptreact = {eslint, prettier},
+            typescript = {eslint, prettier_global},
+            sh = {shellcheck, shfmt},
+            scss = { prettier },
+            sass = { prettier },
+            less = { prettier },
+            graphql = { prettier },
+            vue = { prettier },
             -- markdown = {markdownPandocFormat, markdownlint},
         }
     }

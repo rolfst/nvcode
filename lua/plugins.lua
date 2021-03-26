@@ -117,7 +117,12 @@ return require('packer').startup(function(use)
     -- use 'kshenoy/vim-signature'
     -- use 'nelstrom/vim-visual-star-search'
     -- TODO switch back when config support snips
-    -- use 'windwp/nvim-autopairs'
+    use 'windwp/nvim-autopairs'
+    use 'machakann/vim-sandwich'
+    use 'vimwiki/vimwiki'
+    use 'tools-life/taskwiki'
+    use 'farseer90718/vim-taskwarrior'
+    use 'michal-h21/vim-zettel'
 
     -- TODO put this back when stable for indent lines
     -- vim.g.indent_blankline_space_char = ''
@@ -139,12 +144,4 @@ return require('packer').startup(function(use)
     -- vim.g.UltiSnipsExpandTrigger="<CR>"
     -- vim.g.UltiSnipsJumpForwardTrigger="<Tab>"
     -- vim.g.UltiSnipsJumpBackwardTrigger="<S-Tab>"
-    -- use 'blackcauldron7/surround.nvim'
-    -- use 'ChristianChiarulli/java-snippets'
-    -- use 'xabikos/vscode-javascript'
-    -- use 'dsznajder/vscode-es7-javascript-react-snippets'
-    -- use 'golang/vscode-go'
-    -- use 'rust-lang/vscode-rust'
-    -- use 'ChristianChiarulli/html-snippets'
-    -- use 'ChristianChiarulli/python-snippets'
 end)
