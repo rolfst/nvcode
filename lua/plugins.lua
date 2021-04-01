@@ -33,7 +33,10 @@ return require('packer').startup(function(use)
     use 'kabouzeid/nvim-lspinstall'
 
     -- Debugging
-    use 'mfussenegger/nvim-dap'
+    -- use 'mfussenegger/nvim-dap'
+	u use 'puremourning/vimspector'
+	u use 'szw/vim-maximizer'
+	u use 'nvim-telescope/telescope-vimspector.nvim'
 
     -- Autocomplete
     use 'hrsh7th/nvim-compe'
@@ -63,6 +66,7 @@ return require('packer').startup(function(use)
     use 'nvim-lua/plenary.nvim'
     use 'nvim-telescope/telescope.nvim'
     use 'nvim-telescope/telescope-media-files.nvim'
+	use 'nvim-telescope/telescope-project.nvim'
 
     -- Explorer
     use 'kyazdani42/nvim-tree.lua'

@@ -28,4 +28,4 @@ vim.wo.signcolumn = "yes" -- Always show the signcolumn, otherwise it would shif
 vim.o.updatetime = 800 -- Faster completion
 vim.o.timeoutlen = 300 -- By default timeoutlen is 1000 ms
 vim.o.clipboard = "unnamedplus" -- Copy paste between vim and everything else
-vim.o.guifont = "JetBrainsMono\\ Nerd\\ Font\\ Mono:h18"
+vim.o.guifont = "Victor\\ Mono\\ Medium:h18"

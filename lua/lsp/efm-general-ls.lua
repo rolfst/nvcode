@@ -110,17 +110,16 @@ require"lspconfig".efm.setup {
             css = {prettier},
             json = {prettier},
             yaml = {prettier},
-            markdown = {markdownPandocFormat}
             -- javascriptreact = {prettier, eslint},
             -- javascript = {prettier, eslint},
-            typescriptreact = {eslint, prettier},
-            typescript = {eslint, prettier_global},
-            sh = {shellcheck, shfmt},
+            typescriptreact = tsserver_args,
+            typescript = tsserver_args,
             scss = { prettier },
             sass = { prettier },
             less = { prettier },
             graphql = { prettier },
             vue = { prettier },
+            markdown = {markdownPandocFormat}
             -- markdown = {markdownPandocFormat, markdownlint},
         }
     }

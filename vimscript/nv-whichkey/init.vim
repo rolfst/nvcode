@@ -129,7 +129,7 @@ let g:which_key_map.m = {
 let g:which_key_map.s = {
       \ 'name' : '+search' ,
       \ '.' : [':Telescope filetypes'                   , 'filetypes'],
-      \ 'B' : [':Telescope git_branches'                , 'git branches'],
+      \ 'B' : [':Telescopo git_branches'                , 'git branches'],
       \ 'd' : [':Telescope lsp_document_diagnostics'    , 'document_diagnostics'],
       \ 'D' : [':Telescope lsp_workspace_diagnostics'   , 'workspace_diagnostics'],
       \ 'f' : [':Telescope find_files'                  , 'files'],
@@ -142,6 +142,7 @@ let g:which_key_map.s = {
       \ 'r' : [':Telescope registers'                   , 'registers'],
       \ 'w' : [':Telescope file_browser'                , 'buf_fuz_find'],
       \ 'u' : [':Telescope colorscheme'                 , 'colorschemes'],
+	  \ 'p' : [':Telescope project' 	                    , 'projects']
       \ }
 
 " S is for Session
