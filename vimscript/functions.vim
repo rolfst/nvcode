@@ -34,6 +34,8 @@ command! DebugStepOut lua require'dap'.step_out()
 command! DebugStepInto lua require'dap'.step_into()
 command! DebugToggleRepl lua require'dap'.repl.toggle()
 command! DebugGetSession lua require'dap'.session()
+command! DebugSetexceptionBreakpointsAll lua require'dap'.set_exception_breakpoints({"all"})
+command! DebugHover lua require'dap'.ui.variables.visual_hover()
 
 " Available Debug Adapters:
 "   https://microsoft.github.io/debug-adapter-protocol/implementors/adapters/

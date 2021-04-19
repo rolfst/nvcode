@@ -96,9 +96,24 @@ let g:which_key_map.d = {
       \ 'o' : ['DebugStepOver'                 , 'step over'],
       \ 'r' : ['DebugToggleRepl'               , 'toggle repl'],
       \ 's' : ['DebugStart'                    , 'start'],
+      \ '?' : ['Debughover'                    , 'hover'],
+      \ 'S' : ['Debughover'                    , 'hover'],
       \ }
       " \ 'O' : ['DebugStepOut'                  , 'next-buffer'],
       " \ 'S' : ['DebugGetSession '              , 'fzf-buffer'],
+" let g:which_key_map.d = {
+"       \ 'name' : '+debug' ,
+"       \ 'b' : ['<Plug>VimspectorToggleBreakpoint'        , 'toggle breakpoint'],
+"       \ 'c' : [':call vimspector#Continue()'                 , 'continue'],
+"       \ 'i' : [':call vimspector#StepInto()'                 , 'step into'],
+"       \ 'o' : [':call vimspector#StepOver()'                 , 'step over'],
+"       \ 'O' : [':call vimspector#StepOut()'                 , 'step out'],
+"       \ 'S' : [':call vimspector#Stop()'               , 'toggle repl'],
+"       \ 's' : [':call vimspector#Launch()'                    , 'start'],
+"       \ 'r' : [':VimspectorReset'                    , 'Reset'],
+"       \ }
+"       " \ 'O' : ['DebugStepOut'                  , 'next-buffer'],
+"       " \ 'S' : ['DebugGetSession '              , 'fzf-buffer'],
 
 
 " F is for fold

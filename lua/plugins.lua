@@ -33,10 +33,11 @@ return require('packer').startup(function(use)
     use 'kabouzeid/nvim-lspinstall'
 
     -- Debugging
-    -- use 'mfussenegger/nvim-dap'
-	u use 'puremourning/vimspector'
-	u use 'szw/vim-maximizer'
-	u use 'nvim-telescope/telescope-vimspector.nvim'
+    use 'mfussenegger/nvim-dap'
+	use 'mfussenegger/nvim-dap-python'
+    -- use 'puremourning/vimspector'
+    -- use 'szw/vim-maximizer'
+    -- use 'nvim-telescope/telescope-vimspector.nvim'
 
     -- Autocomplete
     use 'hrsh7th/nvim-compe'
@@ -92,6 +93,11 @@ return require('packer').startup(function(use)
     -- use 'gennaro-tedesco/nvim-jqx'
     use 'turbio/bracey.vim'
 
+	 -- Database
+    use 'tpope/vim-dadbod'
+    use 'kristijanhusak/vim-dadbod-ui'
+    use 'kristijanhusak/vim-dadbod-completion'
+
     -- Registers
     use 'gennaro-tedesco/nvim-peekup'
 
@@ -117,6 +123,7 @@ return require('packer').startup(function(use)
     use 'junegunn/goyo.vim'
     use 'andymass/vim-matchup'
     use 'cohama/lexima.vim'
+	use 'mbbill/undotree'
     use 'MattesGroeger/vim-bookmarks'
     -- use 'kshenoy/vim-signature'
     -- use 'nelstrom/vim-visual-star-search'
